@@ -1,5 +1,7 @@
 {
   "name": "kyraoutwear",
+  "author": "Ricky Andrian",
+  "description": "Kyra Outwear for your daily outfit.",
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
