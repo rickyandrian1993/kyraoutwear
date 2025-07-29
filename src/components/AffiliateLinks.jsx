@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { affiliateIcons } from '../data/affiliateLinks'
 
-const ITEMS_PER_PAGE = 10
+const ITEMS_PER_PAGE = 6
 
 export default function AffiliateLinks() {
   const [page, setPage] = useState(0)
@@ -17,22 +17,23 @@ export default function AffiliateLinks() {
   }
 
   return (
-    <div className="flex flex-col items-center gap-4">
-      <div className="grid grid-cols-5 gap-4">
+    <div className="flex flex-col items-center gap-4 p-4">
+      {/* Product Card Grid */}
+      <div className="grid grid-cols-2 gap-4 w-full">
         {currentIcons.map((icon, index) => (
           <a
             key={index}
             href={icon.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex flex-col items-center text-center hover:scale-105 transition transform duration-200"
+            className="bg-white rounded-xl shadow hover:shadow-lg p-4 flex flex-col items-center text-center transition-all duration-200"
           >
             <img
               src={icon.image}
               alt={icon.name}
-              className="w-10 h-10 mb-1 rounded-lg border border-gray-200 shadow-sm"
+              className="w-16 h-16 rounded-md object-cover mb-2"
             />
-            <span className="text-[10px] text-gray-600 group-hover:text-black line-clamp-2">
+            <span className="text-sm font-medium text-gray-700 hover:text-pink-500 transition line-clamp-2">
               {icon.name}
             </span>
           </a>
@@ -40,11 +41,11 @@ export default function AffiliateLinks() {
       </div>
 
       {/* Pagination Controls */}
-      <div className="flex justify-between w-full px-4 mt-2">
+      <div className="flex justify-between w-full mt-3 px-4">
         <button
           onClick={handlePrev}
           disabled={page === 0}
-          className={`text-sm px-3 py-1 rounded-md transition ${
+          className={`text-sm px-4 py-1 rounded-lg transition ${
             page === 0
               ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
               : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
@@ -55,7 +56,7 @@ export default function AffiliateLinks() {
         <button
           onClick={handleNext}
           disabled={(page + 1) * ITEMS_PER_PAGE >= affiliateIcons.length}
-          className={`text-sm px-3 py-1 rounded-md transition ${
+          className={`text-sm px-4 py-1 rounded-lg transition ${
             (page + 1) * ITEMS_PER_PAGE >= affiliateIcons.length
               ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
               : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
