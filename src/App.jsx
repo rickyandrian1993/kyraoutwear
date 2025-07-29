@@ -1,14 +1,11 @@
-
-// import avatar from './assets/avatar.jpg'
-// import backgroundImage from './assets/fashion-bg.png'
+import avatar from './assets/avatar.png'
+import backgroundImage from './assets/fashion-bg.jpg'
 import AffiliateLinks from './components/AffiliateLinks'
-
 function App() {
   return (
-    // <div className="min-h-screen flex items-center justify-center p-4 bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})`, backgroundColor: 'rgba(255,255,255,0.3)', backgroundBlendMode: 'overlay' }}>
-    <div className="min-h-screen flex items-center justify-center p-4 bg-cover bg-center" style={{ backgroundColor: 'rgba(255,255,255,0.3)', backgroundBlendMode: 'overlay' }}>
+    <div className="min-h-screen flex items-center justify-center p-4 bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})`, backgroundColor: 'rgba(255,255,255,0.3)', backgroundBlendMode: 'overlay' }}>
       <div className="bg-white/70 backdrop-blur-md rounded-3xl p-6 w-full max-w-md text-center shadow-xl">
-        {/* <img src={avatar} className="w-24 h-24 rounded-full mx-auto object-cover mb-4" /> */}
+        <img src={avatar} className="w-24 h-24 rounded-full mx-auto object-cover mb-4" />
         <h1 className="text-lg font-semibold">KYRA OUTWEAR</h1>
         <p className="text-sm text-gray-500 mb-6">Giving clothing a second life</p>
         
