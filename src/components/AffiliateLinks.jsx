@@ -41,7 +41,7 @@ export default function AffiliateLinks() {
       </div>
 
       {/* Pagination Controls */}
-      <div className="flex justify-between w-full mt-3 px-4">
+      <div className="flex justify-center gap-4 w-full mt-3 px-4">
         <button
           onClick={handlePrev}
           disabled={page === 0}
