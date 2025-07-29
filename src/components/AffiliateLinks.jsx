@@ -18,7 +18,7 @@ export default function AffiliateLinks() {
   }
 
   return (
-    <div className="flex flex-col items-center gap-4 mt-4 px-4">
+    <div className="flex flex-col items-center gap-4 mt-1 px-4">
       <div className="grid grid-cols-5 gap-4">
         {currentIcons.map((icon, index) => (
           <a href={icon.url} key={index} target="_blank" rel="noopener noreferrer">
