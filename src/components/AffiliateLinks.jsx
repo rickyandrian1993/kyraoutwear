@@ -20,21 +20,21 @@ export default function AffiliateLinks() {
     <div className="flex flex-col items-center gap-4 p-4">
       {/* Product Card Grid */}
       <div className="grid grid-cols-2 gap-4 w-full">
-        {currentIcons.map((icon, index) => (
+        {currentIcons.map((product, index) => (
           <a
             key={index}
-            href={icon.url}
+            href={product.url}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white rounded-xl shadow hover:shadow-lg p-4 flex flex-col items-center text-center transition-all duration-200"
           >
             <img
-              src={icon.image}
-              alt={icon.name}
+              src={product.image}
+              alt={product.name}
               className="w-16 h-16 rounded-md object-cover mb-2"
             />
             <span className="text-sm font-medium text-gray-700 hover:text-pink-500 transition line-clamp-2">
-              {icon.name}
+              {product.name}
             </span>
           </a>
         ))}
