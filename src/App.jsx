@@ -17,19 +17,33 @@ function App() {
       <div className="bg-white/70 backdrop-blur-md rounded-3xl p-6 w-full max-w-md text-center shadow-xl">
         <img
           src={avatar}
-          className="w-24 h-24 rounded-full mx-auto object-cover mb-2"
+          className="w-28 h-28 rounded-full mx-auto object-cover mb-2"
         />
-        <h1 className="text-lg font-semibold">KYRA OUTWEAR</h1>
+        <h1 className="text-xl font-semibold">KYRA OUTWEAR</h1>
         <p className="text-sm text-gray-500">Giving clothing a second life</p>
-        <div className="flex justify-center space-x-6 m-4 text-black-600">
-          <a href="https://www.instagram.com/kyra.outwear/" target="_blank">
+        <div className="flex justify-center align-middle space-x-6 m-4 text-black-600">
+          <a
+            className="text-lg"
+            href="https://www.instagram.com/kyra.outwear/"
+            target="_blank"
+          >
             <FaInstagram />
           </a>
-          <a href="https://www.tiktok.com/@kyra.outwear" target="_blank">
+          <a
+            className="text-lg"
+            href="https://www.tiktok.com/@kyra.outwear"
+            target="_blank"
+          >
             <FaTiktok />
           </a>
-          <FaWhatsapp />
-          <a href="https://s.shopee.co.id/zifEsxug" target="_blank">
+          <a className="text-lg">
+            <FaWhatsapp />
+          </a>
+          <a
+            className="text-lg"
+            href="https://s.shopee.co.id/zifEsxug"
+            target="_blank"
+          >
             <FaShop />
           </a>
         </div>
