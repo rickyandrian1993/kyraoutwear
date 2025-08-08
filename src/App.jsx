@@ -34,14 +34,14 @@ function App() {
           </a>
         </div>
         <div className="space-y-3">
-          <a className="block w-full bg-white py-2 rounded-lg font-medium shadow hover:bg-gray-100">
+          {/* <a className="block w-full bg-white py-2 rounded-lg font-medium shadow hover:bg-gray-100">
             Fit Channel
           </a>
           <a className="block w-full bg-white py-2 rounded-lg font-medium shadow hover:bg-gray-100">
             Daily outfits
-          </a>
+          </a> */}
           <div className="block w-full bg-white py-2 rounded-lg font-medium shadow hover:bg-gray-100 cursor-pointer">
-            <span>Products</span>
+            {/* <span>Products</span> */}
             <AffiliateLinks />
           </div>
         </div>
