@@ -2,6 +2,7 @@ import backgroundImage from './assets/bg.jpg'
 import avatar from './assets/logo.jpg'
 import AffiliateLinks from './components/AffiliateLinks'
 import ContactInformation from './components/ContactInformation'
+import FloatingWAButton from './components/FloatingWAButton'
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         backgroundBlendMode: 'overlay'
       }}
     >
-      <div className="bg-white/70 backdrop-blur-md rounded-3xl p-6 w-full max-w-md text-center shadow-xl">
+      <div className="bg-white/70 backdrop-blur-md rounded-3xl p-6 w-full max-w-md text-center shadow-xl relative">
         <img
           src={avatar}
           className="w-28 h-28 rounded-full mx-auto object-cover mb-2"
@@ -34,6 +35,7 @@ function App() {
           </div>
         </div>
       </div>
+      <FloatingWAButton />
     </div>
   )
 }

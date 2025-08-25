@@ -1,16 +1,6 @@
-import { FaInstagram, FaShop, FaTiktok, FaWhatsapp } from 'react-icons/fa6'
+import { FaInstagram, FaShop, FaTiktok } from 'react-icons/fa6'
 
 export default function ContactInformation() {
-  const openWhatsApp = () => {
-    const phoneNumber = '6283848307755' // use international format without "+"
-    const message = 'Halo Kyra, mau tanya seputar produknya!'
-
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      message
-    )}`
-    window.open(url, '_blank')
-  }
-
   const openInstagram = () => {
     const url = `https://www.instagram.com/kyra.outwear/`
     window.open(url, '_blank')
@@ -33,9 +23,6 @@ export default function ContactInformation() {
       </button>
       <button className="text-lg" onClick={openTikTok}>
         <FaTiktok />
-      </button>
-      <button className="text-lg" onClick={openWhatsApp}>
-        <FaWhatsapp />
       </button>
       <button className="text-lg" onClick={openShopee}>
         <FaShop />
