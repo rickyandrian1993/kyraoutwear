@@ -1,36 +1,9 @@
-import { FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa'
-import { FaShop } from 'react-icons/fa6'
 import backgroundImage from './assets/bg.jpg'
 import avatar from './assets/logo.jpg'
 import AffiliateLinks from './components/AffiliateLinks'
+import ContactInformation from './components/ContactInformation'
 
 function App() {
-  const phoneNumber = '6283848307755' // use international format without "+"
-  const message = 'Hello, Saya !'
-
-  const openWhatsApp = () => {
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      message
-    )}`
-    window.open(url, '_blank')
-  }
-
-  const openInstagram = () => {
-    const url = `https://www.instagram.com/kyra.outwear/`
-    window.open(url, '_blank')
-  }
-
-  const openShopee = () => {
-    // const url = `https://s.shopee.co.id/zifEsxug`
-    const url = `https://shopee.co.id/kyra.outwear`
-    window.open(url, '_blank')
-  }
-
-  const openTikTok = () => {
-    const url = `https://www.tiktok.com/@kyra.outwear`
-    window.open(url, '_blank')
-  }
-
   return (
     <div
       className="min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat bg-fixed p-4"
@@ -47,20 +20,7 @@ function App() {
         />
         <h1 className="text-xl font-semibold">KYRA OUTWEAR</h1>
         <p className="text-sm text-gray-500">Giving clothing a second life</p>
-        <div className="flex justify-center align-middle space-x-6 m-4 text-black-600">
-          <button className="text-lg" onClick={openInstagram}>
-            <FaInstagram />
-          </button>
-          <button className="text-lg" onClick={openTikTok}>
-            <FaTiktok />
-          </button>
-          <button className="text-lg" onClick={openWhatsApp}>
-            <FaWhatsapp />
-          </button>
-          <button className="text-lg" onClick={openShopee}>
-            <FaShop />
-          </button>
-        </div>
+        <ContactInformation />
         <div className="space-y-3">
           {/* <a className="block w-full bg-white py-2 rounded-lg font-medium shadow hover:bg-gray-100">
             Fit Channel
